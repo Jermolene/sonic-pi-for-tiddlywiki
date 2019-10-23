@@ -1,0 +1,7 @@
+{
+	"title": "$:/plugins/tiddlywiki/sonicpi",
+	"name": "Sonic Pi",
+	"description": "Utilities for working with Sonic Pi",
+	"author": "Jeremy Ruston",
+	"list": "readme license"
+}

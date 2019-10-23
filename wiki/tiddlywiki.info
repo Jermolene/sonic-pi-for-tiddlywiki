@@ -1,0 +1,22 @@
+{
+	"description": "Demo of the Sonic Pi plugin",
+	"plugins": [
+		"tiddlywiki/codemirror"
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	],
+	"includeWikis": [
+	],
+	"build": {
+	},
+	"config": {
+		"sonic-pi-for-tiddlywiki": {
+			"ports": {
+				"listen": 14557,
+				"send": 4557
+			}
+		}
+	}
+}

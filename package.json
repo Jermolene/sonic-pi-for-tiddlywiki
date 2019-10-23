@@ -1,0 +1,20 @@
+{
+  "name": "sonic-pi-for-tiddlywiki",
+  "version": "1.0.0",
+  "description": "Jamming Sonic Pi with TiddlyWiki",
+  "scripts": {
+    "start": "./node_modules/tiddlywiki/tiddlywiki.js ./wiki --listen",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tiddlywiki",
+    "sonic-pi",
+    "sonicpi"
+  ],
+  "author": "Jeremy Ruston",
+  "license": "MIT",
+  "dependencies": {
+    "osc": "^2.3.1",
+    "tiddlywiki": "^5.1.21"
+  }
+}

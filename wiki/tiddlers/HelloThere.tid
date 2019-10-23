@@ -1,0 +1,15 @@
+title: HelloThere
+
+<$list filter="[tag[tune]]">
+
+<$button>
+<$action-sendmessage $message="tm-send-osc-command" $param="run-code" 0="TiddlyWiki" 1={{{ [<currentTiddler>get[text]] }}}/>
+Play
+</$button> <$button>
+<$action-sendmessage $message="tm-send-osc-command" $param="stop-all-jobs" 0="TiddlyWiki"/>
+Stop
+</$button> <strong><$text text=<<currentTiddler>>/></strong>
+
+<$edit tiddler=<<currentTiddler>> class="tc-edit-texteditor"/>
+
+</$list>

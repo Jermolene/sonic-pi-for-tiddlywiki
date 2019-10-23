@@ -1,0 +1,32 @@
+title: BeepyBeepyBells
+type: text/plain
+tags: tune
+
+define :bell do |n|
+  # Triangle waves for the 'hit'
+  synth :tri, note: n - 12, release: 0.5
+  synth :tri, note: n + 0.1, release: 0.5
+  synth :tri, note: n - 0.1, release: 0.5
+  synth :tri, note: n, release: 0.2
+  
+  # Sine waves for the 'ringing'
+  synth :sine, note: n + 24, release: 2
+  synth :sine, note: n + 24.1, release: 2
+  synth :sine, note: n + 24.2, release: 0.5
+  synth :sine, note: n + 11.8, release: 2
+  synth :sine, note: n, release: 2
+  
+  # Low sine waves for the bass
+  synth :sine, note: n - 11.8, release: 2
+  synth :sine, note: n - 12, release: 2
+  synth :sine, note: n - 24, release: 4
+end
+
+# Play a melody with our new bell!
+bell :e3
+sleep 1
+bell :c2
+sleep 1
+bell :d3
+sleep 1
+bell :g2
