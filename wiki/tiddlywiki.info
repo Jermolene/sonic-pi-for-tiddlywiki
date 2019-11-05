@@ -1,6 +1,9 @@
 {
 	"description": "Demo of the Sonic Pi plugin",
 	"plugins": [
+		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/filesystem",
+		"tiddlywiki/highlight",
 		"tiddlywiki/codemirror"
 	],
 	"themes": [
@@ -13,9 +16,11 @@
 	},
 	"config": {
 		"sonic-pi-for-tiddlywiki": {
+			"address": "127.0.0.1",
 			"ports": {
 				"listen": 14557,
-				"send": 4557
+				"send-private": 4557,
+				"send-public": 4559
 			}
 		}
 	}

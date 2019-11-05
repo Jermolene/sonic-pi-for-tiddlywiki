@@ -1,0 +1,8 @@
+title: $:/_Styles
+tags: $:/tags/Stylesheet
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+body.tc-body input[type=range] {
+	width: 100%;
+}

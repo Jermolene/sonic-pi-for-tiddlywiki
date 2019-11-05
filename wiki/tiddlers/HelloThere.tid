@@ -1,5 +1,9 @@
 title: HelloThere
 
+Cutoff for Tilbury 2: {{$:/state/tilburgCutOff}}
+
+<$range tiddler="$:/state/tilburgCutOff" min="0" max="1" increment="0.01" default=".50"/>
+
 <$list filter="[tag[tune]]">
 
 <$button>
