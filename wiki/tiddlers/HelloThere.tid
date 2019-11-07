@@ -1,8 +1,18 @@
+created: 20191107133106792
+creator: jeremy
+modified: 20191107133700262
+modifier: jeremy
 title: HelloThere
+type: text/vnd.tiddlywiki
 
 Cutoff for Tilbury 2: {{$:/state/tilburgCutOff}}
 
 <$range tiddler="$:/state/tilburgCutOff" min="0" max="1" increment="0.01" default=".50"/>
+
+Release for Tilbury 2: {{$:/state/tilburgRelease}}
+
+<$range tiddler="$:/state/tilburgRelease" min="0" max="1" increment="0.01" default=".50"/>
+
 
 <$list filter="[tag[tune]]">
 

@@ -1,7 +1,11 @@
+created: 20191107120558068
+creator: jeremy
+list-before: 
+modified: 20191107120603472
+modifier: jeremy
+tags: tune
 title: Tilburg 2
 type: text/plain
-tags: tune
-list-before:
 
 # Tilburg 2 w/ incoming OSC mods
 # Coded by Sam Aaron
@@ -25,7 +29,7 @@ with_fx :reverb, room: 1 do
      # assumes an incoming OSC message
      # with path: /osc/cutoff
      # and float arg in the range 0.0 -> 1.0
-     co = ((get["/osc/cutoff"][0] || 0.7) * 90) + 40
+     co = ((get["/osc*/cutoff"][0] || 0.7) * 90) + 40
      play ns.choose, detune: (octs 12, 3).tick, release: 0.1, amp: 2, amp: rand + 0.5, cutoff: co, amp: 2
      sleep 0.125
    end
