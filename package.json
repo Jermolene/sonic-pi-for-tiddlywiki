@@ -14,7 +14,7 @@
   "author": "Jeremy Ruston",
   "license": "MIT",
   "dependencies": {
-    "osc": "^2.3.1",
+    "osc": "^2.4.0",
     "tiddlywiki": "^5.1.21"
   }
 }
